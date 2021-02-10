@@ -30,6 +30,10 @@ Containers will be available in docker network `172.23.0.0/24`
 Login to clickhouse01 console (first node's ports are mapped to localhost)
 ```sh
 clickhouse-client -h localhost
+
+Login to clickhouse02 clickhouse-client --host=172.23.0.12 --port=9000
+Login to clickhouse03 clickhouse-client --host=172.23.0.13 --port=9000
+Login to clickhouse04 clickhouse-client --host=172.23.0.14 --port=9000
 ```
 
 Create a test database and table (sharded and replicated)
